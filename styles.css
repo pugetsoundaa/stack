@@ -1,0 +1,19 @@
+.one-indent {
+	margin-left: 10px;
+}
+
+.two-indent {
+	margin-left: 30px;
+}
+
+.three-indent {
+	margin-left: 50px;
+}
+
+.four-indent {
+	margin-left: 70px;
+}
+
+p {
+	margin-bottom: 30px;
+}

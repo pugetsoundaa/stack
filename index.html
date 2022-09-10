@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Website to describe the technology stack used by Puget Sound AA">
 
-    <title>PSAA Technology Stack</title>
+    <title>Puget Sound A.A. - Technology Stack</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,25 +39,63 @@
           </p>
 
            <ul class="four-indent">
-            <li>asdf</li>
-            <li>asdf</li>
-            <li>asdf</li>
+            <li>Login with Google Account thus no new username and password.</li>
+            <li>One click Google Workspace email configuration.</li>
+            <li>One click Google Sites CNAME setup (for regular Google Accounts, Google Workspace accounts require multiple steps).</li>
           </ul>
 
         <h3 class="three-indent"><em>Google Sites</em></h3>
           <p class="four-indent">We use <a target="_blank" href="https://support.google.com/a/users/answer/9314941?hl=en">Google Sites</a> as our content management system (CMS). While nearly any CMS could get the job done, we like Google Sites for the following reasons:</p>
 
           <ul class="four-indent">
-            <li>asdf</li>
-            <li>asdf</li>
-            <li>asdf</li>
+            <li>It's 100% free (there is no paid/premium version) and there is no additional cost to connect to a custom domain name.</li>
+              <ul>
+                <li>Ex: Our main informational website has a default Google Site address of <a target="_blank" href="https://sites.google.com/pugetsoundaa.org/main">https://sites.google.com/pugetsoundaa.org/main</a> but we configured it at no cost to have the url <a target="_blank" href="https://www.pugetsoundaa.org">https://www.pugetsoundaa.org</a></li>
+              </ul>
+            <li>You can make as many Google Sites as you want and connect them to any number of sub-domains.</li>
+              <ul>
+                <li>Ex: Our Twelfth Step Service Committee (TSSC) has their own Google Site they manage with the url <a target="_blank" href="https://tssc.pugetsoundaa.org">https://tssc.pugetsoundaa.org</a></li>
+              </ul>
+            <li>Google Sites has a very gentle learning curve compared to many other more customizeable content management systems (like WordPress). Editing the pages is a lot like editing a PowerPoint slide and thus any relatively tech saavy person can learn how to maintain and update a Google Site. This has made it much easier for us to recruit for our co-webservant positions than when we previously used WordPress.</li>
+            <li>While Google Sites is not as versatile and customizeable with plugins as other CMSs (like WordPress), Google continues to regularly release new features.</li>
+            <li>One click embeds of Google Drive content and Google Calendars.</li>
+            <ul>
+              <li>Google Drive Examples: <a target="blank" href="https://www.pugetsoundaa.org/newsletter">Newsletter Page</a>; <a target="blank" href="https://www.pugetsoundaa.org/flyers">Flyers Page</a></li>
+              <li>Google Calendar Examples: <a target="blank" href="https://www.pugetsoundaa.org/districts-and-committees">Districts & Committees Page</a>; <a target="blank" href="https://sites.google.com/pugetsoundaa.org/main/districts-and-committees/treatment">Treatment Committee Page</a></li>
+            </ul>
           </ul>
 
       <h2 class="two-indent"><strong>Online Meeting List</strong></h2>
-        <h3 class="three-indent"><em>Google Sheet</em></h3>
-          <p class="four-indent">Description of use...</p>
+        <h3 class="three-indent"><em>Google Sheets</em></h3>
+          <p class="four-indent">We use <a target="_blank" href="https://docs.google.com/spreadsheets/d/13W4lBuRWKpnHNOC_3wTXI5anLVOkyvMmyn4Wvqx1z3c/edit?usp=sharing">a Google Sheet for our meeting database</a> as it is the only free way (doesn't require paying for a web server) we know of to achieve the following:</p>
+
+          <ul class="four-indent">
+            <li>Connect to the <a target="_blank" href="https://www.aa.org/meeting-guide-app">AAWS Meeting Guide App.</a></li>
+              <ul>
+                <li>The Meeting Guide App can pull meeting data from a Google Sheet as long as the column headers are labeled according to the <a target="_blank" href="https://github.com/code4recovery/spec#specification">Meeting Guide data specifications</a> and by then <a target="_blank" href="https://meetingguide.helpdocs.io/article/g0ykqkdq0u-connecting-to-meeting-guide-step-by-step">following these instructions.</a></li>
+              </ul>
+            <li>Connect to another website running the <a target="_blank" href="https://wordpress.org/plugins/12-step-meeting-list/">WordPress 12-Step-Meeting-List plugin</a>.</li>
+              <ul>
+                <li><a target="_blank" href="https://area72aa.org">Area 72's website</a> is able to import our meeting data directly from our Google Sheet to include in their meeting listings. A link to your Google Sheet's feed can be acquired by either:</li>
+                  <ul>
+                    <li>Getting a <a target="_blank" href="https://developers.google.com/sheets/api/guides/authorizing#APIKey">Google Sheets API Key</a> and using the link format https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values/A1:ZZ?key=API_KEY.</li>
+                    <li>Or utilizing the <a target="_blank" href="https://sheets.code4recovery.org">Code for Recovery Google Sheets Importer</a>.</li>
+                  </ul>
+              </ul>
+            <li>Implement the TSML UI (See Next Section)</li>
+          </ul>
         <h3 class="three-indent"><em>TSML UI</em></h3>
-          <p class="four-indent">Description of use...</p>
+          <p class="four-indent">We use the TSML UI to display our online meeting list at <a target="_blank" href="https://meetings.pugetsoundaa.org">https://meetings.pugetsoundaa.org</a> for free through GitHub Pages. Here are the general steps you would take to do the same:</p>
+
+            <ul>
+              <li>asdf</li>
+            </ul>
+
+          <p class="four-indent">Some of the advantages of using TSML UI are:</p>
+
+            <ul>
+              <li>asdf</li>
+            </ul>
 
       <h2 class="two-indent"><strong>Other Tools</strong></h2>
         <h3 class="three-indent"><em>tawk.to</em></h3>

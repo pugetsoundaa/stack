@@ -25,7 +25,7 @@
       <h2 class="two-indent"><strong>Informational Website</strong></h2>
         <h3 class="three-indent"><em>Google Domains</em></h3>
           <p class="four-indent">
-            If you want your website to be easily findable you'll want to buy a domain name (ex: pugetsoundaa.org) and keep it continuously registered. Any domain name registrar can get the job done but you should look for one that meets these criteria:
+            If you want your website to be easy to navigate to, you'll want to buy a domain name (ex: pugetsoundaa.org) and keep it continuously registered. Any domain name registrar can get the job done but you should look for one that meets these criteria:
           </p>
 
           <ul class="four-indent">
@@ -35,14 +35,16 @@
           </ul>
 
           <p class="four-indent">
-          We use <a target="_blank" href="https://domains.google.com">Google Domains</a> for our domain registar because they meet all of these requirements. Plus, because we also use Google Accounts (specifically <a target="_blank" href="https://www.google.com/nonprofits/offerings/workspace/">Google Workplace for Non-Profits</a>) there are several additional synergies:
+          We use <a target="_blank" href="https://domains.google.com">Google Domains</a> for our domain registar because they meet all of these requirements. Plus, because we also use Google Accounts (specifically <a target="_blank" href="https://www.google.com/nonprofits/offerings/workspace/">Google Workplace for Non-Profits</a>*) there are several additional synergies:
           </p>
 
            <ul class="four-indent">
-            <li>Login with Google Account thus no new username and password.</li>
+            <li>Login with Google Account, thus no new username and password to keep track of.</li>
             <li>One click Google Workspace email configuration.</li>
             <li>One click Google Sites CNAME setup (for regular Google Accounts, Google Workspace accounts require multiple steps).</li>
           </ul>
+
+          <p class="four-indent">*Note: Every Google tool mentioned on this site is free and available for regular Google/Gmail Accounts, Google Workspace is not required.</p>
 
         <h3 class="three-indent"><em>Google Sites</em></h3>
           <p class="four-indent">We use <a target="_blank" href="https://support.google.com/a/users/answer/9314941?hl=en">Google Sites</a> as our content management system (CMS). While nearly any CMS could get the job done, we like Google Sites for the following reasons:</p>
@@ -74,7 +76,7 @@
               <ul>
                 <li>The Meeting Guide App can pull meeting data from a Google Sheet as long as the column headers are labeled according to the <a target="_blank" href="https://github.com/code4recovery/spec#specification">Meeting Guide data specifications</a> and by then <a target="_blank" href="https://meetingguide.helpdocs.io/article/g0ykqkdq0u-connecting-to-meeting-guide-step-by-step">following these instructions.</a></li>
               </ul>
-            <li>Connect to another website running the <a target="_blank" href="https://wordpress.org/plugins/12-step-meeting-list/">WordPress 12-Step-Meeting-List plugin</a>.</li>
+            <li>Connect to another website running the <a target="_blank" href="https://wordpress.org/plugins/12-step-meeting-list/">WordPress 12 Step Meeting List plugin</a>.</li>
               <ul>
                 <li><a target="_blank" href="https://area72aa.org">Area 72's website</a> is able to import our meeting data directly from our Google Sheet to include in their meeting listings. A link to your Google Sheet's feed can be acquired by either:</li>
                   <ul>
@@ -84,28 +86,32 @@
               </ul>
             <li>Implement the TSML UI (See Next Section)</li>
           </ul>
-        <h3 class="three-indent"><em>TSML UI</em></h3>
-          <p class="four-indent">We use the TSML UI to display our online meeting list at <a target="_blank" href="https://meetings.pugetsoundaa.org">https://meetings.pugetsoundaa.org</a> for free through GitHub Pages. Here are the general steps you would take to do the same:</p>
 
-            <ul>
-              <li>asdf</li>
+          <p class="four-indent">Another huge benefit to us of using a Google Sheet as our database is that it is simply a spreadsheet, so all of our special office workers have found it easy to themselves update the meeting info within and thus removing that responsibilty from our voluneer co-webservants. Changes to the meeting data in the Google Sheet are reflected within a second on our TSML UI web app (once reloaded).</p>
+        
+        <h3 class="three-indent"><em>TSML UI</em></h3>
+          <p class="four-indent">We use the <a target="_blank" href="https://github.com/code4recovery/tsml-ui">TSML UI</a> to display our online meeting list at <a target="_blank" href="https://meetings.pugetsoundaa.org">https://meetings.pugetsoundaa.org</a> for free through <a target="_blank" href="https://pages.github.com">GitHub Pages</a>. Here are the general steps you would take to do the same:</p>
+
+            <ul class="four-indent">
+              <li>Create a <a target="_blank" href="https://github.com">GitHub</a> repository with a single HTML file. Here's <a target="_blank" href="https://github.com/pugetsoundaa/meetings">our respository as an example</a>.</li>
+              <li>Add <a target="_blank" href="https://tsml-ui.code4recovery.org">the necessary code snippet and configure it to use your Google Sheet</a>.</li>
+              <li>Turn on <a target="_blank" href="https://docs.github.com/en/pages/quickstart">GitHub Pages for your repository</a> and <a target="_blank" href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">aim it at whatever custom domain</a> you'd like to serve your meeting list at.</li>
             </ul>
 
           <p class="four-indent">Some of the advantages of using TSML UI are:</p>
 
-            <ul>
-              <li>asdf</li>
+            <ul class="four-indent">
+              <li>Because the TSML UI is a JavaScript web application that can be run completely in the browser, you can serve it for free with GitHub Pages and easily connect a Google Sheet as the data source.</li>
+              <li>Once the GitHub repository is setup, you never need to update it. The most up to date TSML UI code will be loaded every time the browser loads the page because it is linked directly to the Code For Recovery's most current file.</li>
+              <li>Because TSML UI is maintained by the <a target="_blank" href="https://code4recovery.org">Code For Recovery</a> team, it should continue being supported and improved upon in the future. You should also be able to find help with any issues you run into from them on <a target="_blank" href="https://github.com/code4recovery/">GitHub</a> or on the <a target="_blank" href="https://tiaa-forum.org">TIAA Forum</a>.</li>
             </ul>
 
       <h2 class="two-indent"><strong>Other Tools</strong></h2>
         <h3 class="three-indent"><em>tawk.to</em></h3>
-          <p class="four-indent">Description of use...</p>
-        <h3 class="three-indent"><em>Gmail</em></h3>
-          <p class="four-indent">Description of use...</p>
+          <p class="four-indent">We use <a target="_blank" href="https://www.tawk.to">tawk.to</a> to provide a chat button on the home page of our informational website.  Volunteers, organized by our Twelfth Step Service Committee, get a notification through the tawk.to app on their phone whenever someone initiates a chat and are then able to respond within the app.</p>
         <h3 class="three-indent"><em>Google Groups</em></h3>
-          <p class="four-indent">Description of use...</p>
-        <h3 class="three-indent"><em>Google Drive</em></h3>
-          <p class="four-indent">Description of use...</p>
+          <p class="four-indent">We use <a target="_blank" href="https://groups.google.com/">Google Groups</a> to manage email distribution lists for our organization. If you are using Google Workspace you can utilize your domain to create a Group Email such as committee@pugetsoundaa.org with which anyone on the committee could send an email to that address and have it be distributed to everyone's email account. If you don't have Google Workspace you can still use Google Groups with a standard Google/Gmail account; however, the Group Email will look like committee@googlegroups.com</p>
+
 
       <h2 class="two-indent"><strong>Conclusion</strong></h2>
         <p class="three-indent">We hope this page can serve as a road map for your A.A. service organization to replicate some or all of the ways the Puget Sound Central Service Office has setup our website and tech stack. If you have any questions or are looking for help with implementing these technologies, feel free to reach out via email: <a href="mailto:stack@pugetsoundaa.org">stack@pugetsoundaa.org</a>.</p>
